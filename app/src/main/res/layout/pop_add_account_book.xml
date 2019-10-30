@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/mEdit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:text=""
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textSize="16sp"/>
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mText_fuhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% /"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/mText_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(年)"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:id="@+id/mFrame_year"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                >
+
+                <ImageView
+                    android:id="@+id/mImg_jiaobiao_year"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:visibility="gone"
+                    android:layout_gravity="right|bottom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/mFrame_month"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/mImg_jiaobiao_month"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:visibility="gone"
+                    android:layout_gravity="right|bottom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/mFrame_day"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/mImg_jiaobiao_day"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:visibility="gone"
+                    android:layout_gravity="right|bottom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
